@@ -1,0 +1,169 @@
+
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>kakao friends</title>
+    
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    
+        <link rel="stylesheet" href="css/normalize.css">
+    
+        <link rel="stylesheet" href="css/common_test01.css">
+        <link rel="stylesheet" href="css/join.css">
+
+
+        <script src="js/jquery-3.6.3.min.js"></script>
+    </head>
+
+	
+
+
+<body>
+	<div id="top_btn">
+		<a href="#none"><img src="images/top_btn.png" width="60" height="60" alt="top_btn"></a>
+	</div>
+
+
+	<header id="header_wrap">
+		<div id="header_fixed">
+
+			<div id="header">
+
+                <!--회원가입 부분-->
+				<div id="gnb">
+					<ul class="top_gnb">
+						<li><a href="login.html">로그인</a></li>
+						<li><a href="join.html">회원가입</a></li>
+						<li><a href="#none">장바구니<span>(0)</span></a></li>
+					</ul>
+				</div>
+
+
+				<nav id="top_menu_wrap">
+					<h1 class="logo">
+						<a href="index.html"><img src="images/logo_kakaofriends.gif"  width="250" alt="logo"></a>
+                    </h1>
+
+					<div class="nav">
+						<div class="drop_bg"><span></span></div>
+						<div class="bg_menu">
+							<ul class="depth1">
+								<li><a href="#"><span>카카오 소개</span></a>
+									<ul class="depth2">
+										<li><a href="#">카카오 프렌즈</a></li>
+									</ul>
+								</li>
+								<li><a href="#"><span>베스트</span></a>
+								</li>
+								<li><a href="#"><span>콘텐츠</span></a>
+								</li>
+								<li><a href="#"><span>마이</span></a>
+									<ul class="depth2">
+										<li><a href="#">최근 본</a></li>
+										<li><a href="#">내 활동</a></li>
+										<li><a href="#">장바구니</a></li>
+                                        <li><a href="#">주문냉역</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>		
+					</div>	<!-- class="nav" -->
+					
+				</nav> <!-- id="top_menu_wrap" -->
+			</div> <!-- id="header" -->
+		</div><!--  id="header_fixed" -->
+	</header>  <!-- id="header_wrap" -->
+	
+	
+    <!--컨텐츠 영역(홈페이지 메인) 시작-->
+    <div id="contentsArea"> <!-- 본문 바로 가기로 연결-->
+        <!--회원 가입 영역-->
+        <section id="memberArea">
+            <p class="location">Home &gt; 자료실 &gt; <strong>이미지자료</strong></p>
+            <h2>회원가입</h2>
+            <p class="formSign"><Strong class="require">필수</Strong>는 반드시 입력해야 하는 항목입니다.</p>
+            <form action="join.jsp" method="post" id="joinForm" name="joinForm">
+                <fieldset>
+                    <legend>회원가입 정보 입력 폼</legend> <!--안보임-->
+                    <p>
+                        <label for="name">성명<Strong class="require">필수</Strong></label>
+                        <input type="text" id="name" name="name" required placeholder="홍길동">
+                    </p>
+                    <p>
+                        <label for="id">아이디<Strong class="require">필수</Strong></label>
+                        <input type="text" id="id" name="id" readonly placeholder="Guest">
+                        <a href="pop_idCheck.html" class="idCheck">ID중복확인</a>
+                    </p>
+                    <p>
+                        <label for="password">비밀번호<Strong class="require">필수</Strong></label>
+                        <input type="password" id="password" name="password" readonly placeholder="영문/숫자 6~10자 이내">
+                    </p>
+                    <p>
+                        <label for="confirmPassword">비밀번호 확인<Strong class="require">필수</Strong></label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" readonly>
+                    </p>
+                    <p>
+                        <label for="address" class="labelAddress">주소</label>
+                        <a href="find_zipcode.html" class="findZipcode">우편번호 찾기</a> <!--웹 접근성으로 인해 순서 잘 정하기-->
+                        <input type="tel" id="zipcode" name="zipcode" maxlength="5" size="6" title="우편번호">
+                        <input type="text" id="address" name="address" maxlength="100" size="60" 
+                        placeholder="입력 예) 서울지 종로구 00로">
+                    </p>
+                    <p>
+                        <label for="tel">연락처</label>
+                        <input type="tel" id="tel" name="tel" maxlength="11" size="20" title="하이픈(-)은 입력할 수 없습니다."
+                        placeholder="입력 예) 01012345678">
+                    </p>
+                    <p>
+                        <label for="email">이메일<Strong class="require">필수</Strong></label>
+                        <input type="email" id="email" name="email" size="30" readonly 
+                        placeholder="입력 예) kakao@kakao.com">
+                    </p>
+                    <p class="mailing"> <!--class 주는 이유는 css에서-->
+                        <em>메일링 리스트 가입</em>
+                        <span>메일링 리스트에 가입하시면 WebCafe의 뉴스레더를 받아보실 수 있습니다.</span>
+                        <input type="radio" id="mailingOk" name="mailing" value="Yes" checked>
+                        <label for="mailingOk">예</label> 
+                        <!--라디오 버튼은 레이블이 뒤에 인풋이 앞에-->
+                        <input type="radio" id="mailingNo" name="mailing" value="No">
+                        <label for="mailingNo">아니오</label> 
+                    </p>
+                    <div class="btnJoinArea">
+                        <button type="submit" class="btnOk">회원가입</button>
+                        <button type="reset" class="btnCancel">취소</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+
+    </div>
+    <!--컨텐츠 영역 종료-->
+	
+	
+	<footer>
+		<div id="footer_wrap">
+			<div class="footer_top fc">
+				<div>
+					<p>(주) 카카오</p>
+					<p>주소 : 제주특별자치도 제주시 첨단로 242</p>
+					<p>통신판매업신고번호 : 제2015 - 제주아라 - 0032호</p>
+				</div>
+				
+				<div>
+					<p>구매안전서비스 : 신한은행 구매안전서비스 확인</p> 
+					<p>주식회사 카카오 &nbsp;&nbsp; 대표이사 홍은택</p>
+					<p>주소 : 제주특별자치도 제주시 첨단로 242</p>
+					<p>이메일 : friends.cs@kakaocorp.com</p>
+				</div>
+			</div>
+			<div class="footer_bottom fc">
+				ⓒ202 All Rights Reserved./ 이용약관 / <a href="#">개인정보취급방침</a> <br>
+				고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 PG사의 구매안전서비스를 이용하실 수 있습니다. 　<br> <span>KG 이니시스 에스크로 <a href="#none">(서비스가입사실확인)</a></span>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
