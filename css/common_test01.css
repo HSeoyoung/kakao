@@ -243,13 +243,14 @@ img{
 	border-top: 1px solid #dddddd;
 }
  .nav:hover .drop_bg span{ /*펼쳐지는 구간 (배너이미지)*/
-	height: 80%;
+	height: 100%;
+
 }
 
 
  .depth1 .depth2{ /*서브메뉴*/
 	height: 0px;
-	line-height: 10px;
+
 }
  .depth1 .depth2 li{
 	clear: both;
@@ -377,42 +378,42 @@ section #main_cont3{
 	background-color: #ffffff;
 }
 
- #cont3_wrap{
+ .cont3_wrap{
 	width: 1180px; 
 	height: 550px;
 	margin: 0 auto;
 }
 
- #cont3_wrap .cont3_tit{
+ .cont3_wrap .cont3_tit{
 	text-align: center;
 	padding-top: 50px;
 }
 
- #cont3_wrap .cont3_tit h2{
+ .cont3_wrap .cont3_tit h2{
 	font-size: 32px; 
 	font-weight: 900;
 	letter-spacing: -1px;
 	color: #000000;
 }
 
- #cont3_wrap .cont3_tit h2 span{
+ .cont3_wrap .cont3_tit h2 span{
 	color: #f5deaa;
 }
 
- #cont3_wrap .cont3_tit p{
+ .cont3_wrap .cont3_tit p{
 	font-size: 18px;
 	letter-spacing: -1px;
 	color: #000000;
 	margin-top: 3px;
 }
 
- #cont3_wrap .cont3_list{
+ .cont3_wrap .cont3_list{
 	width: 100%; 
 	height: 321px;
 	margin-top: 50px;
 }
 
- #cont3_wrap .cont3_list li{
+ .cont3_wrap .cont3_list li{
 	float: left;
 	width: 24.3%; 
 	height: 300px;
@@ -429,7 +430,7 @@ section #main_cont3{
 	transition: all 0.3s ease-in-out;
 }
 
- #cont3_wrap .cont3_list li:hover img{
+ .cont3_wrap .cont3_list li:hover img{
 	-webkit-transform: scale(1.2);
 	-moz-transform: scale(1.2);
 	-o-transform: scale(1.2);
@@ -439,17 +440,17 @@ section #main_cont3{
 	transition: all 0.3s ease-in-out;
 }
 
- #cont3_wrap .cont3_list li.cont3_list4{
+ .cont3_wrap .cont3_list li.cont3_list4{
 	margin-right: 0;
 }
 
- #cont3_wrap .cont3_list li img{
+ .cont3_wrap .cont3_list li img{
 	padding-top: 10px;
 	display: block;
 	margin: 0 auto;
 }
 
- #cont3_wrap .cont3_list li h3{
+ .cont3_wrap .cont3_list li h3{
 	font-size: 18px;
 	color: #000000;
 	font-weight: 500;
@@ -458,7 +459,7 @@ section #main_cont3{
 	padding-top: 20px;
 }
 
- #cont3_wrap .cont3_list li p{
+ .cont3_wrap .cont3_list li p{
 	font-size: 18px; 
 	font-weight: 500;
 	color: #dec8ba;
@@ -499,30 +500,30 @@ section #main_cont3{
 }
 
 
-#cont4_wrap .cont4 h2{
+.cont3_wrap .cont4 h2{
 	font-size: 32px; 
 	font-weight: 900;
 	letter-spacing: -1px;
 	color: #000000;
 }
 
-#cont4_wrap .cont4 h2 span{
+.cont3_wrap .cont4 h2 span{
 	color: #f5deaa;
 }
 
-#cont4_wrap .cont4 p{
+.cont3_wrap .cont4 p{
 	font-size: 18px;
 	letter-spacing: -1px;
 	color: #000000;
 	margin-top: 3px;
 }
 
-#cont4_wrap .cont4 .cont4_btn{
+.cont3_wrap .cont4 .cont4_btn{
 	width: 150px; 
 	height: 50px;
 }
 
-#cont4_wrap .cont4 .cont4_btn a{
+.cont3_wrap .cont4 .cont4_btn a{
 	width: 150px; 
 	height: 50px;
 	background-color: #f5deaa;

@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+div {
+    width: 250px;
+    height: 350px;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+div >img {
+    width: 150px;
+}
+
+div > h2 {
+    font-size: 1.2em;
+}
+button {
+    background-color: #fff;
+    border-radius: 50%;
+}
