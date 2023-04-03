@@ -1,0 +1,140 @@
+
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>kakao friends</title>
+    
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    
+        <link rel="stylesheet" href="css/normalize.css">
+    
+        <link rel="stylesheet" href="css/common_test01.css">
+        <link rel="stylesheet" href="css/join.css">
+        <link rel="stylesheet" href="css/login.css">
+
+        <script src="js/jquery-3.6.3.min.js"></script>
+    </head>
+
+	
+
+
+<body>
+    <div id="top_btn">
+		<a href="#"><img src="images/top_btn.png" width="60" height="60" alt="top_btn"></a>
+	</div>
+
+
+	<header id="header_wrap">
+		<div id="header_fixed">
+
+			<div id="header">
+
+                <!--회원가입 부분-->
+				<div id="gnb">
+					<ul class="top_gnb">
+						<li><a href="login_01.html">로그인</a></li>
+						<li><a href="join.html">회원가입</a></li>
+						<li><a href="#">장바구니<span>(0)</span></a></li>
+					</ul>
+				</div>
+
+				<nav id="top_menu_wrap">
+					<h1 class="logo">
+						<a href="index.html"><img src="images/logo_kakaofriends.gif"  width="250" alt="logo"></a>
+                    </h1>
+
+					<div class="nav">
+						<div class="drop_bg"><span></span></div>
+						<div class="bg_menu">
+							<ul class="depth1">
+								<li><a href="#"><span>카카오 소개</span></a>
+									<ul class="depth2">
+										<li><a href="#">카카오 프렌즈</a></li>
+									</ul>
+								</li>
+								<li><a href="#"><span>베스트</span></a>
+								</li>
+								<li><a href="#"><span>콘텐츠</span></a>
+								</li>
+								<li><a href="#"><span>마이</span></a>
+									<ul class="depth2">
+										<li><a href="#">최근 본</a></li>
+										<li><a href="login_01.html">내 활동</a></li>
+										<li><a href="#">장바구니</a></li>
+                                        <li><a href="#">주문내역</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>		
+					</div>	<!-- class="nav" -->
+					
+				</nav> <!-- id="top_menu_wrap" -->
+			</div> <!-- id="header" -->
+		</div><!--  id="header_fixed" -->
+	</header>  <!-- id="header_wrap" -->
+	
+	
+    <!--로그인시작-->
+    <div id="usefulArea">
+
+        <!--로그인-->
+        <section class="login">
+            <img src="images/img_apeach_login.png" alt="apeach_login" width="150">
+            <h2>앗! 로그인</h2>
+            <p>로그인하고 이용하기❤</p>
+            <form action="login.jsp" method="post" id="loginFrom" name="loginFrom">
+                <fieldset> <!--폼 영역의 서식들을 그룹화하기 위한 태그-->
+                    <legend> 회원 로그인 폼</legend> 
+                    <!--마크업은 했지만 css 때는 감출거-->
+
+                    <p>
+                        <label for="userId">아이디</label> <!--인라인-->
+                        <input type="text" id="userId" name="userId" placeholder="Guest" required>
+                        <!--placeholder > 힌트  / required > 필수 항목(입력해야지 넘어감)-->
+                    </p>
+
+                    <p>
+                        <label for="userPw">비밀번호</label>
+                        <input type="password" id="userPw" name="userPw" placeholder="4자이상 8자이하" required>
+                    </p>
+
+                    <button type="submit">로그인</button> <!--submit > 서버로 넘어감-->
+                </fieldset>
+            </form>
+    
+            <div class="memberLink">
+                <a href="join.html" class="join">회원가입</a>
+                <a href="#" class="find">계정찾기/비밀번호 찾기</a>
+            </div>                    
+        </section>
+
+    </div>
+	
+	
+	<footer>
+		<div id="footer_wrap">
+			<div class="footer_top fc">
+				<div>
+					<p>(주) 카카오</p>
+					<p>주소 : 제주특별자치도 제주시 첨단로 242</p>
+					<p>통신판매업신고번호 : 제2015 - 제주아라 - 0032호</p>
+				</div>
+				
+				<div>
+					<p>구매안전서비스 : 신한은행 구매안전서비스 확인</p> 
+					<p>주식회사 카카오 &nbsp;&nbsp; 대표이사 홍은택</p>
+					<p>주소 : 제주특별자치도 제주시 첨단로 242</p>
+					<p>이메일 : friends.cs@kakaocorp.com</p>
+				</div>
+			</div>
+			<div class="footer_bottom fc">
+				ⓒ202 All Rights Reserved./ 이용약관 / <a href="#">개인정보취급방침</a> <br>
+				고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 PG사의 구매안전서비스를 이용하실 수 있습니다. 　<br> <span>KG 이니시스 에스크로 <a href="#">(서비스가입사실확인)</a></span>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
